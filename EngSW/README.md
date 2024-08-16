@@ -1,3 +1,6 @@
 # Bertoti
 # We see three critical differences between programming and software engineering: time, scale, and the trade-offs at play. On a software engineering project, engineers need to be more concerned with the passage of time and the eventual need for change. In a software engineering organization, we need to be more concerned about scale and efficiency, both for the software we produce as well as for the organization that is producing it. Finally, as software engineers, we are asked to make more complex decisions with higher-stakes outcomes, often based on imprecise estimates of time and growth.
+
 # A engenharia de software se preocupa com o futuro e as mudanças que podem vir nela. É importante ser flexível e eficiente para poder ter projetos que possam durar no mercado, e entender que cada ação tem alguma consequência.
+
+# Exemplos de trade-off: Trocar dediferentes línguas de programação, como do python(Mais comfortável, porém lento) para o Java(Rápido, porém "verboso"); Mudar de sistemas operacionais, por exemplo, do Windows(Confortável) para o Linux(Flexivel); e trocar funções de um código por outro por conta de eficiência(As funções não podem coexistir sem prejudicar na eficiência do programa)
