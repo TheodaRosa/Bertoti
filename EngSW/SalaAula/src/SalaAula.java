@@ -9,10 +9,15 @@ public class SalaAula {
 		alunos.add(aluno);
 	}
 	
-	public List<Aluno> getAlunos(){
-		return alunos;
+	public List<Aluno> buscarAlunoNome(String nome){
+		List<Aluno> alunosEncontrados = new LinkedList<Aluno>();
+		for(Aluno aluno:alunos) {
+			if(aluno.getNome().equals(nome)) alunosEncontrados.add(aluno);
+		}
+		return alunosEncontrados;
 	}
 	
-	
-	
+	public List<Aluno> getAlunos(){
+		return alunos;
+	}	
 }
