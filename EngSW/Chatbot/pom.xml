@@ -5,19 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>PomboDoBanco</artifactId>
+    <artifactId>Chatbot</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.github.ollama4j/ollama4j -->
+        <dependency>
+            <groupId>io.github.ollama4j</groupId>
+            <artifactId>ollama4j</artifactId>
+            <version>1.0.82</version>
+        </dependency>
+    </dependencies>
+
     <properties>
-        <maven.compiler.source>22</maven.compiler.source>
-        <maven.compiler.target>22</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependecy>
-        <groupId>et.telebof</groupId>
-        <artifactId>telegrambot</artifactId>
-        <version>1.13.2-alpha</version>
-    </dependecy>
 
 </project>
