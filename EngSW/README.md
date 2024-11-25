@@ -10,7 +10,7 @@
 # "CadastroPedras.java"
 # import java.util.LinkedList;
 
- public class CadastroPedras {
+``public class CadastroPedras {
  	
  	private List<Pedra> pedras = new LinkedList<Pedra>();
  	
@@ -87,5 +87,7 @@
  		assertEquals(peedra.get(0).getRa(), pedrinho.getRa());
  	}
  
-}
+}``
 
+# Atividade 4
+# {Link para o UML}[https://lucid.app/lucidchart/1fc857e7-924a-428c-abb7-1dd51730ced2/edit?viewport_loc=21%2C-35%2C1785%2C836%2CHWEp-vi-RSFO&invitationId=inv_d94e2d09-d273-430d-8d13-6f5ba738e11f]
