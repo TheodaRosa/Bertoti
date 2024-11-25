@@ -10,76 +10,82 @@
 # "CadastroPedras.java"
 # import java.util.LinkedList;
 
-# public class CadastroPedras {
-# 	
-# 	private List<Pedra> pedras = new LinkedList<Pedra>();
-# 	
-# 	public void cadastrarPedra(Pedra pedra) {
-# 		pedras.add(pedra);
-# 	}
-# 	
-# 	
-# 	public List<Pedra> buscarPedraNome(String nome){
-# 		List<Pedra> pedrasEncontradas = new LinkedList<Pedra>();
-# 		for(Pedra pedra:pedras) {
-# 			if(pedra.getNome().equals(nome)) pedrasEncontradas.add(pedra);
-# 		}
-# 		return pedrasEncontradas;
-# 	}
-# 	
-# 	
-# 	public List<Pedra> getPedras(){
-# 		return pedras;
-# 	}
-# }
+ public class CadastroPedras {
+ 	
+ 	private List<Pedra> pedras = new LinkedList<Pedra>();
+ 	
+ 	public void cadastrarPedra(Pedra pedra) {
+ 		pedras.add(pedra);
+ 	}
+ 	
+ 	
+ 	public List<Pedra> buscarPedraNome(String nome){
+ 		List<Pedra> pedrasEncontradas = new LinkedList<Pedra>();
+ 		for(Pedra pedra:pedras) {
+ 			if(pedra.getNome().equals(nome)) pedrasEncontradas.add(pedra);
+ 		}
+ 		return pedrasEncontradas;
+ 	}
+ 	
+ 	
+ 	public List<Pedra> getPedras(){
+ 		return pedras;
+ 	}
+ }
 
 
-# "Pedra.java"
-# public class Pedra {
-# 	
-# 	private String nome;
-# 	private String ra;
-# 	
-# 	public Pedra(String nome, String ra) {
-# 		this.nome = nome;
-# 		this.ra = ra;
-# 	}
-# 	
-# 	public String getNome() {
-# 		return nome;
-# 	}
-# 	
-# 	public String getRa() {
-# 		return ra;
-# 	}
-# }
+ "Pedra.java"
+ public class Pedra {
+ 	
+ 	private String nome;
+ 	private int peso;
+  private int altura;
+ 	
+ 	public Pedra(String nome, int peso, int altura) {
+ 		this.nome = nome;
+ 		this.peso = peso;
+    this.altura = altua
+ 	}
+ 	
+ 	public String getNome() {
+ 		return nome;
+ 	}
+ 	
+ 	public int getPeso() {
+ 		return peso;
+ 	} 
+  
+  public int getAltura() {
+ 	  return altura;
+ 	} 
+}
 
 
-# "Test.java"
-# import static org.junit.jupiter.api.Assertions.*;
+ "Test.java"
+ import static org.junit.jupiter.api.Assertions.*;
 
-# import java.util.List;
+ import java.util.List;
 
-# import org.junit.jupiter.api.Test;
+ import org.junit.jupiter.api.Test;
 
-# class PedraTest {
-# 
-# 	@Test
-# 	void test() {
-# 		
-# 		CadastroPedras fatec = new CadastroPedras();
-# 		
-# 		Pedra pedrinho = new Pedra("Pedrinho", "123454321");
-# 		Pedra pedro = new Pedra("Pedro", "12345");
-# 		
-# 		fatec.cadastrarPedra(pedrinho);
-# 		fatec.cadastrarPedra(pedro);
-# 		
-# 		assertEquals(fatec.getPedras().size(), 2);
-# 		
-# 		List<Pedra> aaluno = fatec.buscarPedraNome("Joao");
-# 		assertEquals(aaluno.get(0).getRa(), pedrinho.getRa());
-# 	}
-# 
-# }
+ class PedraTest {
+ 
+ 	@Test
+ 	void test() {
+ 		
+ 		CadastroPedras preda = new CadastroPedras();
+ 		
+ 		Pedra pedrinho = new Pedra("Pedrinho", 10, 20);
+ 		Pedra pedro = new Pedra("Pedro", 1, 2);
+ 		
+ 		preda.cadastrarPedra(pedrinho);
+ 		preda.cadastrarPedra(pedro);
+ 		
+ 		assertEquals(preda.getPedras().size(), 2);
+ 		
+ 		List<Pedra> peedra = preda.buscarPedraNome("Joao");
+ 		assertEquals(peedra.get(0).getRa(), pedrinho.getRa());
+ 	}
+ 
+}
 
